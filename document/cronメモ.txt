@@ -1,0 +1,59 @@
+cronメモ
+
+# cron編集コマンド
+crontab -e
+
+# cron書式
+分 時 日 月 曜日 コマンド
+# 書式詳細
+ 1番目 : 分 : 0-59
+ 2番目 : 時 : 0-23
+ 3番目 : 日 : 1-31
+ 4番目 : 月 : 1-12
+ 5番目 : 曜日 : 0-6
+         曜日は、以下の曜日略称も指定可
+              0 sun
+              1 mon
+              2 tue
+              3 wed
+              4 thu
+              5 fri
+              6 sat
+# コマンド書式
+./RadioRecordingServer/record.sh 周波数[MHz] 録音時間[分] MP3ビットレート[kbps] 出力ディレクトリパス 録音予約名
+# コマンド書式詳細
+ 周波数[MHz]           : 省略不可
+ 録音時間[分]          : 省略不可
+ MP3ビットレート[kbps] : 省略可。省略すると、128[kbps]。
+ 出力ディレクトリパス  : 省略可。省略すると、カレントディレクトリに出力
+ 予約録音名            : 省略可。
+                         指定すると、録音ファイル名が「(予約録音名)_(周波数)_(録音開始時刻).mp3」となり、
+                         省略すると、録音ファイル名が「(周波数)_(録音開始時刻).mp3」となる。
+
+# cron設定例
+
+# テスト
+*/3 * * * * ./RadioRecordingServer/record.sh 90.5   1
+*/3 * * * * ./RadioRecordingServer/record.sh 90.5   1 64 "./rec/" "テスト"
+
+# JUNK
+0 1 * * tue ./RadioRecordingServer/record.sh 90.5 120 64 "./rec/" "伊集院光 深夜の馬鹿力"
+0 1 * * wed ./RadioRecordingServer/record.sh 90.5 120 64 "./rec/" "爆笑問題カーボーイ"
+0 1 * * thu ./RadioRecordingServer/record.sh 90.5 120 64 "./rec/" "山里亮太の不毛な議論"
+0 1 * * fri ./RadioRecordingServer/record.sh 90.5 120 64 "./rec/" "おぎやはぎのメガネびいき"
+0 1 * * sat ./RadioRecordingServer/record.sh 90.5 120 64 "./rec/" "バナナマンのバナナムーンGOLD"
+
+# オールナイトニッポン
+0 1 * * tue ./RadioRecordingServer/record.sh 93.0 120 64 "./rec/" "Adoのオールナイトニッポン"
+0 1 * * wed ./RadioRecordingServer/record.sh 93.0 120 64 "./rec/" "星野源のオールナイトニッポン"
+0 1 * * thu ./RadioRecordingServer/record.sh 93.0 120 64 "./rec/" "乃木坂46のオールナイトニッポン"
+0 1 * * fri ./RadioRecordingServer/record.sh 93.0 120 64 "./rec/" "ナインティナインのオールナイトニッポン"
+0 1 * * sat ./RadioRecordingServer/record.sh 93.0 120 64 "./rec/" "霜降り明星のオールナイトニッポン"
+0 1 * * sun ./RadioRecordingServer/record.sh 93.0 120 64 "./rec/" "オードリーのオールナイトニッポン"
+
+# オールナイトニッポン0(ZERO)
+0 3 * * tue ./RadioRecordingServer/record.sh 93.0 90 64 "./rec/" "フワちゃんのオールナイトニッポン0"
+0 3 * * wed ./RadioRecordingServer/record.sh 93.0 90 64 "./rec/" "あののオールナイトニッポン0"
+0 3 * * thu ./RadioRecordingServer/record.sh 93.0 90 64 "./rec/" "佐久間宣行のオールナイトニッポン0"
+0 3 * * fri ./RadioRecordingServer/record.sh 93.0 90 64 "./rec/" "マヂカルラブリーのオールナイトニッポン0"
+0 3 * * sat ./RadioRecordingServer/record.sh 93.0 120 64 "./rec/" "三四郎のオールナイトニッポン0"

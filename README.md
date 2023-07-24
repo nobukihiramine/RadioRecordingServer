@@ -5,5 +5,5 @@ Radio Recording Server
 Copyright 2023 Nobuki HIRAMINE  
 The source code is licensed under the Apache License, Version 2.0.  
 See the [LICENSE](LICENSE) file for more details.  
-(本アプリケーションのソースコードのライセンスは、「Apache License, Version 2.0」です。  
+(ソースコードのライセンスは、「Apache License, Version 2.0」です。  
 詳細は「[LICENSE](LICENSE)」ファイルを参照ください。)
