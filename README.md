@@ -5,7 +5,7 @@
 <img src="images/00_assembly.jpg" alt="Radio Recording Server"/>  
 <kbd><img src="images/00_cron_junk_mp3files.png" alt="Mp3 Files"/></kbd>
 
-**Table Of Contents (目次)**
+# 目次
 * [1. 概要](#1-概要)
 * [2. 必要なもの](#2-必要なもの)
 * [3. 基板配線](#3-基板配線)
