@@ -19,23 +19,23 @@
 * **主な機能**
 
    * **ラジオを聴くことができる**  
-   FMラジオモジュールを使用して、FMラジオの音声を受信します。受信したラジオの音声は、FMラジオモジュール⇒USBオーディオアダプタのマイク端子⇒USBオーディオアダプタのヘッドホン端子⇒スピーカー、と経由して、聴くことができます。「USBオーディオアダプタのマイク端子⇒USBオーディオアダプタのヘッドホン端子」については、「マイク端子の入力音声をヘッドホン端子にループバックするモジュール」である、[PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio/)の「module-loopback」を利用します。
+      FMラジオモジュールを使用して、FMラジオの音声を受信します。受信したラジオの音声は、FMラジオモジュール⇒USBオーディオアダプタのマイク端子⇒USBオーディオアダプタのヘッドホン端子⇒スピーカー、と経由して、聴くことができます。「USBオーディオアダプタのマイク端子⇒USBオーディオアダプタのヘッドホン端子」については、「マイク端子の入力音声をヘッドホン端子にループバックするモジュール」である、[PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio/)の「module-loopback」を利用します。
    * **ラジオを録音することができる**  
-   [FFmpeg](https://ffmpeg.org/)を利用して、USBオーディオアダプタのマイク端子からの入力を、MP3ファイルとして保存します。
+      [FFmpeg](https://ffmpeg.org/)を利用して、USBオーディオアダプタのマイク端子からの入力を、MP3ファイルとして保存します。
    * **ラジオを予約録音することができる**  
-   [cron](https://en.wikipedia.org/wiki/Cron)を利用して、所望の曜日、時刻に、ラジオを録音します。
+      [cron](https://en.wikipedia.org/wiki/Cron)を利用して、所望の曜日、時刻に、ラジオを録音します。
 
 * **主な部品**
 
    * **マイコンボード**  
-   マイコンボードとしては、Raspberryp Pi 4 を使用します。(Raspberry Pi 3 でも可)  
-   <img src="images/01_raspberrypi3_hand.jpg" alt="Raspberry Pi 3"/>
+      マイコンボードとしては、Raspberryp Pi 4 を使用します。(Raspberry Pi 3 でも可)  
+      <img src="images/01_raspberrypi3_hand.jpg" alt="Raspberry Pi 3"/>  
    * **FMラジオモジュール**  
-   FMラジオモジュールを使用して、FMラジオの音声を受信します。amazon等で1個あたり200円しない価格で販売されている「RDA5807Mを使用したFMラジオモジュール」を使用します。  
-   <img src="images/01_radio_module.jpg" alt="Radio Module"/>
+      FMラジオモジュールを使用して、FMラジオの音声を受信します。amazon等で1個あたり200円しない価格で販売されている「RDA5807Mを使用したFMラジオモジュール」を使用します。  
+      <img src="images/01_radio_module.jpg" alt="Radio Module"/>  
    * **USBオーディオアダプタ**  
-   受信したラジオ音声は、USBオーディオアダプタのマイク端子を通して、Raspberry Pi に入力します。マイク端子から入力した音声は、USBオーディオアダプタのヘッドホン端子から出力し、ラジオ音声をスピーカーで聴くことができます。  
-   <img src="images/01_usb_audio_adapter.jpg" alt="USB Audio Adapter"/>
+      受信したラジオ音声は、USBオーディオアダプタのマイク端子を通して、Raspberry Pi に入力します。マイク端子から入力した音声は、USBオーディオアダプタのヘッドホン端子から出力し、ラジオ音声をスピーカーで聴くことができます。  
+      <img src="images/01_usb_audio_adapter.jpg" alt="USB Audio Adapter"/>  
 
 # 2. 必要なもの
 
