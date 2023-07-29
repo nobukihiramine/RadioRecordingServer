@@ -9,9 +9,11 @@
 * [1. 概要](#1-概要)
 * [2. 必要なもの](#2-必要なもの)
 * [3. 基板配線](#3-基板配線)
-* [4. Raspberry Pi OS セットアップ](#4-raspberry-pi-os-セットアップ)
+* [4. Raspberry Pi のOSのセットアップ](#4-raspberry-pi-のosのセットアップ)
 * [5. Raspberry Pi のオーディオのセットアップ](#5-raspberry-pi-のオーディオのセットアップ)
 * [6. ソフトウェアのセットアップ](#6-ソフトウェアのセットアップ)
+* [7. 使用方法](#7-使用方法)
+* [追加の情報](#追加の情報)
 * [License](#license-ライセンス)
 
 # 1. 概要
@@ -118,7 +120,7 @@
    <img src="images/03_circuit_board03L.jpg" width="240" alt="connection"/>
 
 
-# 4. Raspberry Pi OS セットアップ
+# 4. Raspberry Pi のOSのセットアップ
 https://www.hiramine.com/physicalcomputing/radio_recording_server/04_raspi_os_setup.html
 
 - micro SDカードへRaspberry Pi OSの書き込み
@@ -207,6 +209,7 @@ https://www.hiramine.com/physicalcomputing/radio_recording_server/05_raspi_audio
    ```
 
 # 追加の情報
+* [回路図ファイル](https://www.hiramine.com/physicalcomputing/radio_recording_server/radio_recording_server_schematic_diagram.pdf)
 * [ラジオ録音サーバー を作る （ FMラジオモジュール + Raspberry Pi 3 + USBオーディオアダプタ )](https://www.hiramine.com/physicalcomputing/radio_recording_server/index.html)
 
 # License (ライセンス)
