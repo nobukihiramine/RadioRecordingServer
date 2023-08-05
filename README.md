@@ -42,7 +42,7 @@
 # 2. ハードウェア仕様
 
 * **FMラジオモジュールまわりの回路図**  
-   <img src="images/03_schematic_diagram.png" alt="Schematic Diagram"/>  
+   <kbd><img src="images/03_schematic_diagram.png" alt="Schematic Diagram"/></kbd>  
    | 回路部品名 | 部品詳細 | 備考、目的、効果 |
    | --- | --- | --- |
    | | Raspberry Pi | Raspberry Pi OSが動作するRaspberry Pi |
