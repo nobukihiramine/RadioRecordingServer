@@ -241,7 +241,7 @@ https://www.hiramine.com/physicalcomputing/radio_recording_server/05_raspi_audio
 
 # 追加の情報
 * [FMラジオモジュールまわりの回路図のファイル](https://www.hiramine.com/physicalcomputing/radio_recording_server/radio_recording_server_schematic_diagram_v1.pdf)
-* [ラジオ録音サーバー を作る （ FMラジオモジュール + Raspberry Pi 3 + USBオーディオアダプタ )](https://www.hiramine.com/physicalcomputing/radio_recording_server/index.html)
+* [ラジオ録音サーバー を作る （ FMラジオモジュール + Raspberry Pi + USBオーディオアダプタ )](https://www.hiramine.com/physicalcomputing/radio_recording_server/index.html)
 
 # License (ライセンス)
 Copyright 2023 Nobuki HIRAMINE  
