@@ -20,8 +20,7 @@
 
 # 1. 概要
 
-* **主な機能**
-
+* **主な機能**  
    * **ラジオを聴くことができる**  
       FMラジオモジュールを使用して、FMラジオの音声を受信します。受信したラジオの音声は、FMラジオモジュール⇒USBオーディオアダプタのマイク端子⇒USBオーディオアダプタのヘッドホン端子⇒スピーカー、と経由して、聴くことができます。「USBオーディオアダプタのマイク端子⇒USBオーディオアダプタのヘッドホン端子」については、「マイク端子の入力音声をヘッドホン端子にループバックするモジュール」である、[PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio/)の「module-loopback」を利用します。
    * **ラジオを録音することができる**  
@@ -29,8 +28,7 @@
    * **ラジオを予約録音することができる**  
       [cron](https://en.wikipedia.org/wiki/Cron)を利用して、所望の曜日、時刻に、ラジオを録音します。
 
-* **主な部品**
-
+* **主な部品**  
    * **マイコンボード**  
       マイコンボードとしては、Raspberryp Pi 4 を使用します。(Raspberry Pi 3 でも可)  
       <img src="images/01_raspberrypi3_hand.jpg" alt="Raspberry Pi 3"/>  
@@ -43,10 +41,8 @@
 
 # 2. ハードウェア仕様
 
-* **FMラジオモジュールまわりの回路図**
-
-   <img src="images/03_schematic_diagram.png" alt="Schematic Diagram"/>
-
+* **FMラジオモジュールまわりの回路図**  
+   <img src="images/03_schematic_diagram.png" alt="Schematic Diagram"/>  
    | 回路部品名 | 部品詳細 | 備考、目的、効果 |
    | --- | --- | --- |
    | | Raspberry Pi | Raspberry Pi OSが動作するRaspberry Pi |
@@ -60,8 +56,7 @@
 
 * **３つの版(ブレッドボード 版、Raspberry Pi 3/4 シールド 版、Raspberry Pi Zero シールド板)で、共通で必要な部品と、版固有で必要な部品とがありまあす。**
 
-* **「ブレッドボード 版」に固有で必要な部品**
-
+* **「ブレッドボード 版」に固有で必要な部品**  
    | 部品名 | 商品例 | 数量 |
    | --- | --- | --- |
    | Raspberry Pi | [Raspberry Pi 4](https://akizukidenshi.com/catalog/g/gM-14839/) (Raspberry Pi 3, Raspberry Pi Zero W, Raspberry Pi Zero 2 W 等、Raspberry Pi OSが動作するRaspberry Pi でも可。Raspberry Pi OS が動作しない Raspberry Pi Pico は不可) | 1個 |
@@ -69,8 +64,7 @@
    | ブレッドボード | [ブレッドボード EIC-801](https://akizukidenshi.com/catalog/g/gP-00315/) | 1個 |
    | 配線用のジャンパーワイヤ | [ジャンパーワイヤ（オス－メス）](https://akizukidenshi.com/catalog/g/gC-08932/) | 適量 |
 
-* **「Raspberry Pi 3/4 シールド 版」に固有で必要な部品**
-
+* **「Raspberry Pi 3/4 シールド 版」に固有で必要な部品**  
    | 部品名 | 商品例 | 数量 |
    | --- | --- | --- |
    | Raspberry Pi | [Raspberry Pi 4](https://akizukidenshi.com/catalog/g/gM-14839/) (Raspberry Pi 3でも可) | 1個 |
@@ -81,8 +75,7 @@
    | FMラジオモジュール を連結するためのピンソケット | [シングルピンソケット(低メス) 1×20 (20P)](https://akizukidenshi.com/catalog/g/gC-03138/) | 1個 |
    | 配線用のスズメッキ線 | [スズメッキ線 (0.6mm 10m)](https://akizukidenshi.com/catalog/g/gP-02220/) | 適量 |
 
-* **「Raspberry Pi Zero シールド 版」に固有で必要な部品**
-
+* **「Raspberry Pi Zero シールド 版」に固有で必要な部品**  
    | 部品名 | 商品例 | 数量 |
    | --- | --- | --- |
    | Raspberry Pi | [Raspberry Pi Zero W](https://www.switch-science.com/products/3200) (Raspberry Pi Zero 2 W でも可) | 1個 |
@@ -95,8 +88,7 @@
    | FMラジオモジュール を連結するためのピンソケット | [シングルピンソケット(低メス) 1×20 (20P)](https://akizukidenshi.com/catalog/g/gC-03138/) | 1個 |
    | 配線用のスズメッキ線 | [スズメッキ線 (0.6mm 10m)](https://akizukidenshi.com/catalog/g/gP-02220/) | 適量 |
 
-* **共通で必要な基本部品**
-
+* **共通で必要な基本部品**  
    | 部品名 | 商品例 | 数量 |
    | --- | --- | --- |
    | microSDカード | [サンディスク microSD 32GB](https://amzn.to/3OFqpmf) | 1個 |
@@ -106,8 +98,7 @@
    | 配線用ビニール線、アンテナ用ビニール線 | [耐熱通信機器用ビニル電線 2m×10色 導体径0.65mm 単芯](https://akizukidenshi.com/catalog/g/gP-08996/) | 適量 |
    | スピーカー | [ミニスピーカー](https://jp.daisonet.com/products/4549131578874) (3.5mm ステレオミニプラグのあるもの。イヤホンやヘッドホンでも可) | 1個 |
 
-* **共通で必要なブレッドボードや基板に乗せる部品**
-
+* **共通で必要なブレッドボードや基板に乗せる部品**  
    | 部品名 | 商品例 | 数量 |
    | --- | --- | --- |
    | 10kΩ抵抗 | [カーボン抵抗(炭素皮膜抵抗) 1/6W 10kΩ](https://akizukidenshi.com/catalog/g/gR-16103/) | 4本 |
@@ -117,24 +108,21 @@
    | 4.7μFコンデンサ | [オーディオ用無極性電解コンデンサー 4.7μF](https://akizukidenshi.com/catalog/g/gP-04623/) | 2個 |
    | 3.5mmステレオミニジャック | [3.5mmステレオミニジャックDIP化キット](https://akizukidenshi.com/catalog/g/gK-05363/) | 1 |
 
-* **動作上は無くても問題ないが、あるとよい、スペーサー部品**
-
+* **動作上は無くても問題ないが、あるとよい、スペーサー部品**  
    | 部品名 | 商品例 | 数量 |
    | --- | --- | --- |
    | ネジ(M2.6) | [なべ小ねじ M2.6×5](https://akizukidenshi.com/catalog/g/gP-07324/) | 4個 |
    | 金属スペーサー(M2.6 長さ11mm) | [六角オネジ・メネジ MB26-11](https://akizukidenshi.com/catalog/g/gP-11546/) | 4個 |
    | 金属スペーサー(M2.6 長さ7mm) | [六角両メネジ FB26-7](https://akizukidenshi.com/catalog/g/gP-07311/) | 4個 |
 
-* **RDA5807Mを使用したFMラジオモジュールのピッチ変換**
-
+* **RDA5807Mを使用したFMラジオモジュールのピッチ変換**  
    「RDA5807Mを使用したFMラジオモジュール」のピンピッチが2.54mmではなく、2.00mmなので、2.54mmピッチのL型のピンヘッダのピンをペンチで向きを調整し、「RDA5807Mを使用したFMラジオモジュール」にはんだ付けし、ピンピッチを2.54mmにします。「2.54mmピッチのL型のピンヘッダ」の２列の間隔は、6ピッチ分 (2.54mm× 6ピッチ分 = 15.24mmほど) にします。  
    <img src="images/02_radio_module01L.jpg" width="240" alt="Radio Module 01"/>  
    <img src="images/02_radio_module02L.jpg" width="240" alt="Radio Module 02"/>
 
 # 3. 配線
 
-* **配線表**
-
+* **配線表**  
    | FMラジオモジュール ピン番号 | FMラジオモジュール ピン名称 | 接続先 (Raspberry Pi、オーディオジャック) |
    | --- | --- | --- |
    | 1 | SDA | Raspberry Piの3番ピン(GPIO2,SDA) および 10kΩ抵抗を経由して3V3 |
@@ -148,20 +136,16 @@
    | 9 | NC | (無接続) |
    | 10 | ANT | アンテナ用ビニール線 |
 
-* **「ブレッドボード 版」の配線**
-
+* **「ブレッドボード 版」の配線**  
    <img src="images/03_bread_board_wiring_diagram.png" width="240" alt="connection"/>  
-
    <img src="images/03_bread_board_wiring_result01L.jpg" width="240" alt="connection"/>  
 
-* **「Raspberry Pi 3/4 シールド 版」の配線**
-
+* **「Raspberry Pi 3/4 シールド 版」の配線**  
    配線図では基板の表側を配線が這っていますが、実際には、裏側を這わせます。  
    <img src="images/03_raspi_shield_wiring_diagram.png" width="240" alt="connection"/>  
    <img src="images/03_raspi_shield_wiring_result01L.jpg" width="240" alt="connection"/>  
 
-* **「Raspberry Pi Zero シールド 版」の配線**
-
+* **「Raspberry Pi Zero シールド 版」の配線**  
    配線図では基板の表側を配線が這っていますが、実際には、裏側を這わせます。配線を確認できるよう、コンデンサ、オーディオジャックを基板の下方に配置していますが、実際には、基板上に配置します。  
    <img src="images/03_pizero_shield_wiring_diagram.png" width="240" alt="connection"/>  
    <img src="images/03_pizero_shield_wiring_result01L.jpg" width="240" alt="connection"/>  
