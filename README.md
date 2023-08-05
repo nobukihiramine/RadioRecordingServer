@@ -1,4 +1,4 @@
-# RadioRecordingServer
+# Radio Recording Server
 「Radio Recording Server」は、ラジオ録音サーバーです。  
 「Radio Recording Server」は、FMラジオを予約録音することができます。  
 「Radio Recording Server」は、オープンソースハードウェアです。  
