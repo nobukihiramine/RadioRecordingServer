@@ -106,7 +106,7 @@
    | 配線用ビニール線、アンテナ用ビニール線 | [耐熱通信機器用ビニル電線 2m×10色 導体径0.65mm 単芯](https://akizukidenshi.com/catalog/g/gP-08996/) | 適量 |
    | スピーカー | [ミニスピーカー](https://jp.daisonet.com/products/4549131578874) (3.5mm ステレオミニプラグのあるもの。イヤホンやヘッドホンでも可) | 1個 |
 
-* **共通で必要なブレッドボードやシールドに乗せる部品**
+* **共通で必要なブレッドボードや基板に乗せる部品**
 
    | 部品名 | 商品例 | 数量 |
    | --- | --- | --- |
@@ -117,7 +117,7 @@
    | 4.7μFコンデンサ | [オーディオ用無極性電解コンデンサー 4.7μF](https://akizukidenshi.com/catalog/g/gP-04623/) | 2個 |
    | 3.5mmステレオミニジャック | [3.5mmステレオミニジャックDIP化キット](https://akizukidenshi.com/catalog/g/gK-05363/) | 1 |
 
-* **動作上は無くても問題ないが、あるとよい、Raspberry Pi 設置に関する部品**
+* **動作上は無くても問題ないが、あるとよい、スペーサー部品**
 
    | 部品名 | 商品例 | 数量 |
    | --- | --- | --- |
@@ -133,7 +133,7 @@
 
 # 3. 配線
 
-* **基板接続表**
+* **配線表**
 
    | FMラジオモジュール ピン番号 | FMラジオモジュール ピン名称 | 接続先 (Raspberry Pi、オーディオジャック) |
    | --- | --- | --- |
@@ -148,19 +148,19 @@
    | 9 | NC | (無接続) |
    | 10 | ANT | アンテナ用ビニール線 |
 
-* **ブレッドボード 版の配線**
+* **「ブレッドボード 版」の配線**
 
    <img src="images/03_bread_board_wiring_diagram.png" width="240" alt="connection"/>  
 
    <img src="images/03_bread_board_wiring_result01L.jpg" width="240" alt="connection"/>  
 
-* **Raspberry Pi 3/4 シールド 版の配線**
+* **「Raspberry Pi 3/4 シールド 版」の配線**
 
    配線図では基板の表側を配線が這っていますが、実際には、裏側を這わせます。  
    <img src="images/03_raspi_shield_wiring_diagram.png" width="240" alt="connection"/>  
    <img src="images/03_raspi_shield_wiring_result01L.jpg" width="240" alt="connection"/>  
 
-* **Raspberry Pi Zero シールド 版の配線**
+* **「Raspberry Pi Zero シールド 版」の配線**
 
    配線図では基板の表側を配線が這っていますが、実際には、裏側を這わせます。配線を確認できるよう、コンデンサ、オーディオジャックを基板の下方に配置していますが、実際には、基板上に配置します。  
    <img src="images/03_pizero_shield_wiring_diagram.png" width="240" alt="connection"/>  
