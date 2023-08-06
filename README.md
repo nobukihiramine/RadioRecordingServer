@@ -137,18 +137,18 @@
    | 10 | ANT | アンテナ用ビニール線 |
 
 * **「ブレッドボード 版」の配線**  
-   <img src="images/03_bread_board_wiring_diagram.png" width="240" alt="connection"/>  
-   <img src="images/03_bread_board_wiring_result01L.jpg" width="240" alt="connection"/>  
+   <img src="images/03_bread_board_wiring_diagram.png" width="260" alt="connection"/>  
+   <img src="images/03_bread_board_wiring_result01L.jpg" width="200" alt="connection"/>  
 
 * **「Raspberry Pi 3/4 シールド 版」の配線**  
    配線図では基板の表側を配線が這っていますが、実際には、裏側を這わせます。  
-   <img src="images/03_raspi_shield_wiring_diagram.png" width="240" alt="connection"/>  
-   <img src="images/03_raspi_shield_wiring_result01L.jpg" width="240" alt="connection"/>  
+   <img src="images/03_raspi_shield_wiring_diagram.png" width="360" alt="connection"/>  
+   <img src="images/03_raspi_shield_wiring_result01L.jpg" width="200" alt="connection"/>  
 
 * **「Raspberry Pi Zero シールド 版」の配線**  
    配線図では基板の表側を配線が這っていますが、実際には、裏側を這わせます。配線を確認できるよう、コンデンサ、オーディオジャックを基板の下方に配置していますが、実際には、基板上に配置します。  
-   <img src="images/03_pizero_shield_wiring_diagram.png" width="240" alt="connection"/>  
-   <img src="images/03_pizero_shield_wiring_result01L.jpg" width="240" alt="connection"/>  
+   <img src="images/03_pizero_shield_wiring_diagram.png" width="315" alt="connection"/>  
+   <img src="images/03_pizero_shield_wiring_result01L.jpg" width="200" alt="connection"/>  
 
 
 # 4. Raspberry Pi のOSのセットアップ
