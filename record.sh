@@ -22,6 +22,7 @@
 #   $3 : Bit rate for mp3 file [kbps] : Optional. Default is 128[kbps].
 #   $4 : Output directory path : Optional. Default is current directory.
 #   $5 : Scheduled recording name : Optional.
+#   $6 : Enable 'Save as WAV and Convert to MP3 later' : Optional. Default is Disable.
 
 readonly WORK_DIR_ORG=$(pwd)
 cd "$(dirname "$0")"
@@ -31,6 +32,7 @@ readonly REC_LENGTH_MINUTE="$2"
 readonly BITRATE_KBPS="${3:-128}"
 OUTPUT_DIR="${4:-.}"
 readonly SCHEDULED_RECORDING_NAME="$5"
+readonly WAV2MP3="$6"
 
 readonly DATETIME=$(date "+%Y%m%d%H%M")
 
@@ -93,12 +95,20 @@ if [ $result -ne 0 ]; then
 fi
 
 # 録音の開始
-# デフォルトキャプチャデバイス(=USBオーディオアダプタのマイク端子)に入る音声をmp3に変換する。
-ffmpeg -t "${REC_LENGTH_SEC}" \
-       -f alsa -i default \
-       -vn -ac 2 -ar 44100 -ab "${BITRATE_KBPS}"k -acodec libmp3lame \
-       "${MP3_FILE_PATH}" \
-       -loglevel error
+# ffmpegを利用しデフォルトキャプチャデバイス(=USBオーディオアダプタのマイク端子)に入る音声をmp3に変換する。
+# WAV2MP3が有効な場合は、arecordを利用しwavとして保存し、後で、mp3に変換する。ここでwavとして保存する。
+if [ "" != "${WAV2MP3}" ]; then
+    arecord -d "${REC_LENGTH_SEC}" \ 
+            -f S16_LE -c 2 -r 44100 \
+            "${MP3_FILE_PATH}".wav \
+            --quiet
+else
+    ffmpeg -t "${REC_LENGTH_SEC}" \
+           -f alsa -i default \
+           -vn -ac 2 -ar 44100 -ab "${BITRATE_KBPS}"k -acodec libmp3lame \
+           "${MP3_FILE_PATH}" \
+           -loglevel error
+fi
 
 # ラジオの終了
 # 連続録音の場合はラジオ終了しない。
@@ -115,4 +125,13 @@ elif [ "" != "${INFO_LOADED_MODULE_LOOPBACK}" ]; then
 else
     # ラジオの終了(quiet modeで終了)
     python3 ./pymodules/radio_off.py quiet
+fi
+
+# WAV2MP3が有効な場合は、arecordでwav保存し、後で、mp3に変換する。ここでmp3に変換する。
+if [ "" != "${WAV2MP3}" ]; then
+    ffmpeg -i "${MP3_FILE_PATH}".wav \
+        -vn -ac 2 -ar 44100 -ab "${BITRATE_KBPS}"k -acodec libmp3lame \
+        "${MP3_FILE_PATH}" \
+        -loglevel error
+    rm -f "${MP3_FILE_PATH}".wav
 fi
