@@ -239,6 +239,22 @@ https://www.hiramine.com/physicalcomputing/radio_recording_server/05_raspi_audio
    0 3 * * sat ./RadioRecordingServer/record.sh 93.0 120 64 "./rec/" "三四郎のオールナイトニッポン0"
    ```
 
+* **補足）record.shのWAV2MP3モード**  
+   「record.sh」の引数の「予約録音名」の後ろに任意の文字列（たとえば「wav2mp3」）を追加すると、WAV2MP3モードが有効になります。WAV2MP3モードの場合、「ラジオ音声をリアルタイムではWAVとして保存し、後で、WAVをMP3に変換する」動作になります。「予約録音名」の後ろに文字列を追加しない場合は、「ラジオ音声をリアルタイムでMP3に変換する」動作になります。  
+
+   マイコンボードとして、Raspberry Pi Zero W を使用した場合は、性能不足のため「ラジオ音声をリアルタイムでMP3に変換」がうまくいかないので、「ラジオを録音する」「ラジオを予約録音する」際には、「record.sh」の引数の「予約録音名」の後ろに任意の文字列（たとえば「wav2mp3」）を追加し、WAV2MP3モードを有効にします。  
+
+   **ラジオを録音する**  
+   以下の書式で、コマンドを実行します。
+   ```shell
+   $ ./RadioRecordingServer/record.sh 周波数[MHz] 録音時間[分] MP3ビットレート[kbps] 出力ディレクトリパス 予約録音名 wav2mp3
+   ```
+   **ラジオを予約録音する**  
+   以下の書式で、コマンドの予約実行をcron設定します。
+   ```shell
+   分 時 日 月 曜日 ./RadioRecordingServer/record.sh 周波数[MHz] 録音時間[分] MP3ビットレート[kbps] 出力ディレクトリパス 予約録音名 wav2mp3
+   ```
+
 # 追加の情報
 * [FMラジオモジュールまわりの回路図のファイル](https://www.hiramine.com/physicalcomputing/radio_recording_server/radio_recording_server_schematic_diagram_v1.pdf)
 * [ラジオ録音サーバー を作る （ FMラジオモジュール + Raspberry Pi + USBオーディオアダプタ )](https://www.hiramine.com/physicalcomputing/radio_recording_server/index.html)
