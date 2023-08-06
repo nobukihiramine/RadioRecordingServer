@@ -30,7 +30,7 @@
 
 * **主な部品**  
    * **マイコンボード**  
-      マイコンボードとしては、Raspberryp Pi 4 を使用します。(Raspberry Pi 3 でも可)  
+      マイコンボードとしては、Raspberryp Pi を使用します。Raspberry Pi 3, Raspberry Pi 4, Raspberry Pi Zero W, Raspberry Pi Zero 2 W 等、Raspberry Pi OSが動作するRaspberry Pi が使用可です。Raspberry Pi OS が動作しない Raspberry Pi Pico は使用不可です。   
       <img src="images/01_raspberrypi3_hand.jpg" alt="Raspberry Pi 3"/>  
    * **FMラジオモジュール**  
       FMラジオモジュールを使用して、FMラジオの音声を受信します。amazon等で1個あたり200円しない価格で販売されている「RDA5807Mを使用したFMラジオモジュール」を使用します。  
