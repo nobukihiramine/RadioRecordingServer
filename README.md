@@ -245,12 +245,12 @@ https://www.hiramine.com/physicalcomputing/radio_recording_server/05_raspi_audio
    マイコンボードとして、「Raspberry Pi Zero W」を使用した場合は、性能不足のため「ラジオ音声をリアルタイムでMP3に変換」がうまくいかないので、「ラジオを録音する」「ラジオを予約録音する」際には、record.sh の引数の「予約録音名」の後ろに任意の文字列（たとえば「wav2mp3」）を追加し、WAV2MP3モードを有効にします。  
 
    **ラジオを録音する**  
-   以下の書式で、コマンドを実行します。
+   以下の書式で、コマンドを実行します。(「予約録音名」の後ろに「wav2mp3」を追加します)
    ```shell
    $ ./RadioRecordingServer/record.sh 周波数[MHz] 録音時間[分] MP3ビットレート[kbps] 出力ディレクトリパス 予約録音名 wav2mp3
    ```
    **ラジオを予約録音する**  
-   以下の書式で、コマンドの予約実行をcron設定します。
+   以下の書式で、コマンドの予約実行をcron設定します。(「予約録音名」の後ろに「wav2mp3」を追加します)
    ```shell
    分 時 日 月 曜日 ./RadioRecordingServer/record.sh 周波数[MHz] 録音時間[分] MP3ビットレート[kbps] 出力ディレクトリパス 予約録音名 wav2mp3
    ```
