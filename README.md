@@ -188,11 +188,11 @@ https://www.hiramine.com/physicalcomputing/radio_recording_server/05_raspi_audio
 * **組み上げ**  
    Raspberry Pi にスペーサー、基板を取り付けます。基板やブレッドボードに、ラジオモジュール、アンテナ線を取り付けます。基板やブレッドボードのオーディオジャックと、USBオーディオアダプタのマイク端子（ピンク色の端子）を、ステレオミニプラグケーブルで繋ぎます。USBオーディオアダプタのヘッドホン端子（緑色の端子）に、ヘッドホンやイヤホンやスピーカーを接続します。  
    ブレッドボード 版  
-   <img src="images/08_bread_board_assemblyL.jpg" width="240" alt="Radio Recording Server"/>  
+   <img src="images/08_bread_board_assemblyL.jpg" width="400" alt="Radio Recording Server"/>  
    Raspberry Pi 3/4 シールド 版  
-   <img src="images/08_raspi_shield_assemblyL.jpg" width="240" alt="Radio Recording Server"/>  
+   <img src="images/08_raspi_shield_assemblyL.jpg" width="400" alt="Radio Recording Server"/>  
    Raspberry Pi Zero シールド 版  
-   <img src="images/08_pizero_shield_assemblyL.jpg" width="240" alt="Radio Recording Server"/>  
+   <img src="images/08_pizero_shield_assemblyL.jpg" width="400" alt="Radio Recording Server"/>  
 
 * **ラジオを聴く**  
    ラジオを聴くことを開始する
