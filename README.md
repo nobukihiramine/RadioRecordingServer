@@ -144,11 +144,13 @@
    配線図では基板の表側を配線が這っていますが、実際には、裏側を這わせます。  
    <img src="images/03_raspi_shield_wiring_diagram.png" alt="connection"/>  
    <img src="images/03_raspi_shield_wiring_result01L.jpg" width="400" alt="connection"/>  
+   <img src="images/03_raspi_shield_wiring_result02L.jpg" width="400" alt="connection"/>  
 
 * **「Raspberry Pi Zero シールド 版」の配線**  
    配線図では基板の表側を配線が這っていますが、実際には、裏側を這わせます。配線を確認できるよう、コンデンサ、オーディオジャックを基板の下方に配置していますが、実際には、基板上に配置します。  
    <img src="images/03_pizero_shield_wiring_diagram.png" alt="connection"/>  
    <img src="images/03_pizero_shield_wiring_result01L.jpg" width="400" alt="connection"/>  
+   <img src="images/03_pizero_shield_wiring_result02L.jpg" width="400" alt="connection"/>  
 
 
 # 4. Raspberry Pi のOSのセットアップ
@@ -183,6 +185,14 @@ https://www.hiramine.com/physicalcomputing/radio_recording_server/05_raspi_audio
    ```
 
 # 7. 使用方法
+* **組み上げ**  
+   Raspberry Pi にスペーサー、基板を取り付けます。基板やブレッドボードに、ラジオモジュール、アンテナ線を取り付けます。基板やブレッドボードのオーディオジャックと、USBオーディオアダプタのマイク端子（ピンク色の端子）を、ステレオミニプラグケーブルで繋ぎます。USBオーディオアダプタのヘッドホン端子（緑色の端子）に、ヘッドホンやイヤホンやスピーカーを接続します。  
+   ブレッドボード 版  
+   <img src="images/08_bread_board_assemblyL.jpg" width="240" alt="Radio Recording Server"/>  
+   Raspberry Pi 3/4 シールド 版  
+   <img src="images/08_raspi_shield_assemblyL.jpg" width="240" alt="Radio Recording Server"/>  
+   Raspberry Pi Zero シールド 版  
+   <img src="images/08_pizero_shield_assemblyL.jpg" width="240" alt="Radio Recording Server"/>  
 
 * **ラジオを聴く**  
    ラジオを聴くことを開始する
