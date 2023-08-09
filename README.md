@@ -79,7 +79,7 @@
    | 部品名 | 商品例 | 数量 |
    | --- | --- | --- |
    | Raspberry Pi | [Raspberry Pi Zero W](https://www.switch-science.com/products/3200) (Raspberry Pi Zero 2 W でも可) | 1個 |
-   | USB ACアダプター | [スイッチングACアダプター](https://akizukidenshi.com/catalog/g/gM-16293/) (使用するRaspberry Piの仕様に適合したUSB ACアダプター)| 1個 |
+   | USB ACアダプター | [スイッチングACアダプター](https://akizukidenshi.com/catalog/g/gM-12001/) (使用するRaspberry Piの仕様に適合したUSB ACアダプター)| 1個 |
    | USB-microB OTGケーブル | [USB(microB to A)変換アダプター](https://amzn.to/3qiBtwj) | 1個 |
    | Raspberry Pi Zeroに取り付けるピンヘッダ | [ピンヘッダ 2×20 (40P)](https://akizukidenshi.com/catalog/g/gC-00080/) | 1個 |
    | 基板 | [Raspberry Pi Zero用ユニバーサル基板](https://akizukidenshi.com/catalog/g/gP-14031/) | 1枚 |
