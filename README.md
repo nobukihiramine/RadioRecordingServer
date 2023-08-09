@@ -95,6 +95,7 @@
    | USBオーディオアダプタ | [USB オーディオ アダプタ 3.5mm ヘッドホン・マイク端子付](https://amzn.to/45oXdpp) | 1個 |
    | FMラジオモジュール | [FMラジオモジュール RDA5807M RRD-102](https://amzn.to/3NTdlth) | 1個 |
    | FMラジオモジュールのピッチ変換のための2.54mmピッチのL型のピンヘッダ | [ピンヘッダ(オスＬ型) 1×40 (40P)](https://akizukidenshi.com/catalog/g/gC-01627/) | 1個 |
+   | 3.5mmステレオミニプラグケーブル | [3.5mmステレオケーブル(両端L型/オス⇔オス)/0.15m](https://amzn.to/3s2jg6T) | 1個 |
    | 配線用ビニール線、アンテナ用ビニール線 | [耐熱通信機器用ビニル電線 2m×10色 導体径0.65mm 単芯](https://akizukidenshi.com/catalog/g/gP-08996/) | 適量 |
    | スピーカー | [ミニスピーカー](https://jp.daisonet.com/products/4549131578874) (3.5mm ステレオミニプラグのあるもの。イヤホンやヘッドホンでも可) | 1個 |
 
