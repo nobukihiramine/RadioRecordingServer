@@ -187,7 +187,7 @@ https://www.hiramine.com/physicalcomputing/radio_recording_server/05_raspi_audio
 
 # 7. 使用方法
 * **組み上げ**  
-   Raspberry Pi にスペーサー、基板を取り付けます。基板やブレッドボードに、ラジオモジュール、アンテナ線を取り付けます。基板やブレッドボードのオーディオジャックと、USBオーディオアダプタのマイク端子（ピンク色の端子）を、ステレオミニプラグケーブルで繋ぎます。USBオーディオアダプタのヘッドホン端子（緑色の端子）に、ヘッドホンやイヤホンやスピーカーを接続します。  
+   Raspberry Pi にスペーサーや基板を取り付けます。基板やブレッドボードに、ラジオモジュール、アンテナ線を取り付けます。基板やブレッドボードのオーディオジャックと、USBオーディオアダプタのマイク端子（ピンク色の端子）を、ステレオミニプラグケーブルで繋ぎます。USBオーディオアダプタのヘッドホン端子（緑色の端子）に、ヘッドホンやイヤホンやスピーカーを接続します。  
    ブレッドボード 版  
    <img src="images/08_bread_board_assemblyL.jpg" width="400" alt="Radio Recording Server"/>  
    Raspberry Pi 3/4 シールド 版  
@@ -272,7 +272,9 @@ https://www.hiramine.com/physicalcomputing/radio_recording_server/05_raspi_audio
 
 # License (ライセンス)
 Copyright 2023 Nobuki HIRAMINE  
-The source code is licensed under the Apache License, Version 2.0.  
-See the [LICENSE](LICENSE) file for more details.  
-(ソースコードのライセンスは、「Apache License, Version 2.0」です。  
+The source is licensed under the Apache License, Version 2.0.  
+"Source" form shall mean the preferred form for making modifications, including but not limited to software source code, documentation source, and configuration files.  
+See the [LICENSE](LICENSE) file for more details.   
+(ソースのライセンスは、「Apache License, Version 2.0」です。  
+「ソース」という用語は、変更を加えるのに都合の良い形式を指し、「ソース」にはソフトウェアのソースコード、ドキュメントのソース、設定ファイルなどが含まれますが、これに限定されるものではありません。  
 詳細は「[LICENSE](LICENSE)」ファイルを参照ください。)
