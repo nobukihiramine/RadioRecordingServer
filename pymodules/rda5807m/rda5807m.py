@@ -185,7 +185,7 @@ class RDA5807M:
 
         # Register 03H の初期化
         uiRegister = self._readRegister( 0x03 )
-        uiRegister &= ~REG_03H_CHAN_MASK    # 指定の周波数を設定する。((ulFrequency - 76000) / 100)(デフォルト値は0x13f)
+        uiRegister &= ~REG_03H_CHAN_MASK    # 周波数を下限値にする(=0000000000)。(デフォルト値は0x13f)
         uiRegister &= ~REG_03H_TUNE         # Tune開始時に立てるので、初期化時は倒す。(デフォルト値は0)
         uiRegister &= ~REG_03H_BAND_MASK    # AMも聞くためにワイドFMが聴けるWorld Wide(=0b10)(76～108MHz)に設定する。(デフォルト値は0)
         uiRegister |= ( (0b10 << REG_03H_BAND_SHIFT) & REG_03H_BAND_MASK )
