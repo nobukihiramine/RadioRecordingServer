@@ -2,9 +2,14 @@
 「Radio Recording Server」は、ラジオ録音サーバーです。  
 「Radio Recording Server」は、FMラジオを予約録音することができます。  
 「Radio Recording Server」は、オープンソースハードウェアです。  
-<img src="images/08_bread_board_assemblyL.jpg" width="240" alt="Radio Recording Server"/>  
-<img src="images/08_raspi_shield_assemblyL.jpg" width="240" alt="Radio Recording Server"/>  
-<img src="images/08_pizero_shield_assemblyL.jpg" width="240" alt="Radio Recording Server"/>  
+
+ブレッドボード 版  
+<img src="images/08_bread_board_assemblyL.jpg" width="400" alt="Radio Recording Server"/>  
+Raspberry Pi 3/4 シールド 版  
+<img src="images/08_raspi_shield_assemblyL.jpg" width="400" alt="Radio Recording Server"/>  
+Raspberry Pi Zero シールド 板  
+<img src="images/08_pizero_shield_assemblyL.jpg" width="400" alt="Radio Recording Server"/>  
+ラジオ番組を予約録音した結果、生成されたmp3ファイルの例  
 <kbd><img src="images/00_cron_junk_mp3files.png" alt="Mp3 Files"/></kbd>
 
 # 目次
@@ -118,7 +123,7 @@
 
 * **RDA5807Mを使用したFMラジオモジュールのピッチ変換**  
    「RDA5807Mを使用したFMラジオモジュール」のピンピッチが2.54mmではなく、2.00mmなので、2.54mmピッチのL型のピンヘッダのピンをペンチで向きを調整し、「RDA5807Mを使用したFMラジオモジュール」にはんだ付けし、ピンピッチを2.54mmにします。「2.54mmピッチのL型のピンヘッダ」の２列の間隔は、6ピッチ分 (2.54mm× 6ピッチ分 = 15.24mmほど) にします。  
-   <img src="images/02_radio_module01L.jpg" width="240" alt="Radio Module 01"/>  
+   <img src="images/02_radio_module01L.jpg" width="240" alt="Radio Module 01"/>
    <img src="images/02_radio_module02L.jpg" width="240" alt="Radio Module 02"/>
 
 # 3. 配線
@@ -188,6 +193,7 @@ https://www.hiramine.com/physicalcomputing/radio_recording_server/05_raspi_audio
 # 7. 使用方法
 * **組み上げ**  
    Raspberry Pi にスペーサーや基板を取り付けます。基板やブレッドボードに、ラジオモジュール、アンテナ線を取り付けます。基板やブレッドボードのオーディオジャックと、USBオーディオアダプタのマイク端子（ピンク色の端子）を、ステレオミニプラグケーブルで繋ぎます。USBオーディオアダプタのヘッドホン端子（緑色の端子）に、ヘッドホンやイヤホンやスピーカーを接続します。  
+
    ブレッドボード 版  
    <img src="images/08_bread_board_assemblyL.jpg" width="400" alt="Radio Recording Server"/>  
    Raspberry Pi 3/4 シールド 版  
@@ -249,6 +255,8 @@ https://www.hiramine.com/physicalcomputing/radio_recording_server/05_raspi_audio
    0 3 * * fri ./RadioRecordingServer/record.sh 93.0 90 64 "./rec/" "マヂカルラブリーのオールナイトニッポン0"
    0 3 * * sat ./RadioRecordingServer/record.sh 93.0 120 64 "./rec/" "三四郎のオールナイトニッポン0"
    ```
+   ラジオ番組を予約録音した結果、生成されたmp3ファイルの例  
+   <kbd><img src="images/00_cron_junk_mp3files.png" alt="Mp3 Files"/></kbd>
 
 * **補足）record.shのWAV2MP3モード**  
    record.sh の引数の「予約録音名」の後ろに任意の文字列（たとえば「wav2mp3」）を追加すると、WAV2MP3モードが有効になります。WAV2MP3モードの場合、「ラジオ音声をリアルタイムではWAVとして保存し、後で、WAVをMP3に変換する」動作になります。「予約録音名」の後ろに文字列を追加しない場合は、「ラジオ音声をリアルタイムでMP3に変換する」動作になります。  
