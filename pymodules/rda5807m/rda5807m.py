@@ -153,6 +153,11 @@ class RDA5807M:
         self._i2c_addr = I2C_ADDR_RDA5807M
         self._i2c = smbus.SMBus(1)
 
+    # デストラクタ
+    def __del__( self ):
+        # I2C接続のクローズ
+        self._i2c.close()
+
     # チップIDの取得
     def getChipID( self ):
         uiChipID = self._decodeRegister( 0x00, REG_00H_CHIPID_MASK, REG_00H_CHIPID_SHIFT )
