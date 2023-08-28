@@ -1,6 +1,5 @@
 # radio_on.py
 # ラジオを周波数を指定してオンする
-
 # Arguments
 #   argv[1] : Frequency [MHz]
 #   argv[2] : Quiet mode. Suppress messages. Not radio mute. "0" is not Quiet mode.

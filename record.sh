@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# record.sh
+# ラジオの録音
+# Arguments
+#   $1 : Frequency [MHz]
+#   $2 : Recording length [minute]
+#   $3 : Bit rate for mp3 file [kbps] : Optional. Default is 128[kbps].
+#   $4 : Output directory path : Optional. Default is current directory.
+#   $5 : Scheduled recording name : Optional.
+#   $6 : Enable 'Save as WAV and Convert to MP3 later' : Optional. Default is Disable.
+
 # Copyright 2023 Nobuki HIRAMINE
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,16 +23,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-# record.sh
-# ラジオの録音
-# Arguments
-#   $1 : Frequency [MHz]
-#   $2 : Recording length [minute]
-#   $3 : Bit rate for mp3 file [kbps] : Optional. Default is 128[kbps].
-#   $4 : Output directory path : Optional. Default is current directory.
-#   $5 : Scheduled recording name : Optional.
-#   $6 : Enable 'Save as WAV and Convert to MP3 later' : Optional. Default is Disable.
 
 readonly WORK_DIR_ORG=$(pwd)
 cd "$(dirname "$0")"

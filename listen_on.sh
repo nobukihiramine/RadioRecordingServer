@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# listen_on.sh
+# ラジオの聴取開始
+# Arguments
+#   $1 : Frequency [MHz]
+
 # Copyright 2023 Nobuki HIRAMINE
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,11 +18,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-# listen_on.sh
-# ラジオの聴取開始
-# Arguments
-#   $1 : Frequency [MHz]
 
 cd "$(dirname "$0")"
 

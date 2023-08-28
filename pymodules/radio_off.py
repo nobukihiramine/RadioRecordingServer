@@ -1,6 +1,5 @@
 # radio_off.py
 # ラジオをオフする
-
 # Arguments
 #   argv[1] : Quiet mode. Suppress messages. Not radio mute. "0" is not Quiet mode.
 

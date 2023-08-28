@@ -1,6 +1,5 @@
 # radio_tune.py
 # ラジオの周波数を変更する
-
 # Arguments
 #   argv[1] : Frequency [MHz]
 #   argv[2] : Quiet mode. Suppress messages. Not radio mute. "0" is not Quiet mode.

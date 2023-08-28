@@ -1,3 +1,12 @@
+# RDA5807M.py
+#
+# Class to control RDA5807M
+#
+# Author : Nobuki HIRAMINE, http://www.hiramine.com
+# History :
+#   2020/06/27 Created for use with Arduino/ATmega328.
+#   2023/05/06 Modified for use with Raspberry Pi 3
+
 # Copyright 2023 Nobuki HIRAMINE
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -11,15 +20,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-# RDA5807M.py
-#
-# Class to control RDA5807M
-#
-# Author : Nobuki HIRAMINE, http://www.hiramine.com
-# History :
-#   2020/06/27 Created for use with Arduino/ATmega328.
-#   2023/05/06 Modified for use with Raspberry Pi 3
 
 import smbus
 import time
